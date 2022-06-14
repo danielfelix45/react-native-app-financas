@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Platform } from 'react-native';
+import { Platform, Keyboard } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { AuthContext } from '../../contexts/auth'
 
@@ -24,6 +24,7 @@ export default function SignIn() {
 
   function handleLogin() {
     signIn(email, password);
+    Keyboard.dismiss();
   };
 
   return (
