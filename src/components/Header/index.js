@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <Container>
       <ButtonMenu onPress={() => navigation.toggleDrawer()}>
-        <Icon name='menu' color='#fff' size={30} />
+        <Icon name='menu' color='#fff' size={35} />
       </ButtonMenu>
     </Container>
   );
